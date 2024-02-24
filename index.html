@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <article class="result">
+        <h4>Your Result</h4>
+        <div class="circle">
+          <img src="./icons/Oval.svg" alt="oval" />
+          <span class="big-num" style="top: 40%; left: 50%">76</span>
+          <span class="small-num" style="top: 70%; left: 50%">of 100</span>
+        </div>
+
+        <h3>Great</h3>
+        <p>Your performance exceed 65% of the people conducting the test here!</p>
+      </article>
+      <article class="summary">
+        <div class="h4-container">
+          <h4>Summary</h4>
+        </div>
+        <div class="container-of-containers">
+          <div class="calification-container red-color">
+            <img src="./icons/icon-reaction.svg" alt="reaction" /> <span>Reaction</span>
+            <span id="reaction-value"></span>
+          </div>
+          <div class="calification-container yellow-color">
+            <img src="./icons/icon-memory.svg" alt="memory" /> <span>Memory</span>
+            <span id="memory-value"></span>
+          </div>
+          <div class="calification-container green-color">
+            <img src="./icons/icon-verbal.svg" alt="verbal" /> <span>Verbal</span>
+            <span id="verbal-value"></span>
+          </div>
+          <div class="calification-container blue-color">
+            <img src="./icons/icon-visual.svg" alt="visual" /> <span>Visual</span>
+            <span id="visual-value"></span>
+          </div>
+        </div>
+        <button>Continue</button>
+      </article>
+    </section>
+  </body>
+  <script>
+    let reaction = 80;
+    let memory = 92;
+    let verbal = 61;
+    let visual = 73;
+    let total = 76;
+
+    document.getElementById("reaction-value").textContent = `${reaction}/100`;
+    document.getElementById("memory-value").textContent = `${memory}/100`;
+    document.getElementById("verbal-value").textContent = `${verbal}/100`;
+    document.getElementById("visual-value").textContent = `${visual}/100`;
+  </script>
+</html>
